@@ -165,7 +165,7 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/kevin/Desktop/FruitWar/user.keystore
+  AndroidKeystoreName: C:/Users/kevin/Documents/GitHub/FruitWar/FruitWar/user.keystore
   AndroidKeyaliasName: half burnt biscuits
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
