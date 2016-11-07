@@ -7,9 +7,12 @@ using System.Collections;
 public class FruitBehaviour : MonoBehaviour {
 	private GameObject fruitBaseAttached;
 	private bool colision = false;
+	public bool cutted = false;
 
 	void Update () {
-		gameObject.transform.Rotate (new Vector3 (0f, 1f, 0f) * 50 * Time.deltaTime);
+		if (!cutted) {
+			gameObject.transform.Rotate (new Vector3 (0f, 1f, 0f) * 50 * Time.deltaTime);
+		}
 	}
 
 	public void setFruitBaseAttached(GameObject aFruitBase) {
@@ -29,6 +32,6 @@ public class FruitBehaviour : MonoBehaviour {
 
 	private void destroyFruit() {
 		fruitBaseAttached.GetComponent<BaseScript> ().setNoFruit ();
-		Destroy (gameObject);
+		//Destroy (gameObject);
 	}
 }

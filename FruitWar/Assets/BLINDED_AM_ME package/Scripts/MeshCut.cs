@@ -219,8 +219,8 @@ namespace BLINDED_AM_ME{
 
 			/** Modificación día 18/10/2016
 			 */
-			leftSideObj.AddComponent<Rigidbody> ();
-			leftSideObj.GetComponent<Rigidbody> ().useGravity = true;
+			//leftSideObj.AddComponent<Rigidbody> ();
+			//leftSideObj.GetComponent<Rigidbody> ().useGravity = false;
 
 			GameObject rightSideObj = new GameObject("right side", typeof(MeshFilter), typeof(MeshRenderer));
 			rightSideObj.transform.position = victim.transform.position;

@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f754c1800d721d049a2c13d8ff63ba3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCutting: 0
 --- !u!114 &114000014098663422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -149,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0062f7558f594c7458439a6e23fe7584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cutted: 0
 --- !u!135 &135000012269486106
 SphereCollider:
   m_ObjectHideFlags: 1
