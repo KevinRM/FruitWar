@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{80F2C42E-72C0-89D3-6288-98F2730DAA0B}") = "FruitWar", "Assembly-CSharp-firstpass.csproj", "{3F9FA62B-7AAD-76E5-4D52-04FBB4247CD1}"
+EndProject
+Project("{80F2C42E-72C0-89D3-6288-98F2730DAA0B}") = "FruitWar", "Assembly-CSharp.csproj", "{800E58C2-D807-55CC-7410-700588177230}"
+EndProject
+Project("{80F2C42E-72C0-89D3-6288-98F2730DAA0B}") = "FruitWar", "Assembly-CSharp-Editor.csproj", "{DFD16664-DA70-DBE4-A04B-792DF38E4809}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F9FA62B-7AAD-76E5-4D52-04FBB4247CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9FA62B-7AAD-76E5-4D52-04FBB4247CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9FA62B-7AAD-76E5-4D52-04FBB4247CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9FA62B-7AAD-76E5-4D52-04FBB4247CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{800E58C2-D807-55CC-7410-700588177230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800E58C2-D807-55CC-7410-700588177230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800E58C2-D807-55CC-7410-700588177230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800E58C2-D807-55CC-7410-700588177230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD16664-DA70-DBE4-A04B-792DF38E4809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD16664-DA70-DBE4-A04B-792DF38E4809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD16664-DA70-DBE4-A04B-792DF38E4809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD16664-DA70-DBE4-A04B-792DF38E4809}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
