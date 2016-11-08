@@ -4,8 +4,10 @@ using System.Collections;
 public class Cut : MonoBehaviour {
 	public Material capMaterial;
 	private GameObject[] pieces;
+	private GameObject victim;
 	void OnTriggerEnter (Collider objeto){
-		GameObject victim = objeto.gameObject;
+		//gameObject.GetComponentInParent<Rigidbody> ().isKinematic = true;
+		victim = objeto.gameObject;
 
 
 		// Cortar el elemento con el que se colisionado si es una fruta
@@ -38,8 +40,9 @@ public class Cut : MonoBehaviour {
 
 	}
 	void destroyobjects(){
+
+		//victim.GetComponent<FruitBehaviour> ().destroyFruit ();
 		Destroy (pieces[0]);
 		Destroy (pieces[1]);
-	
 	}
 }

@@ -5,9 +5,10 @@ using System.Collections;
  * Script asociado a cada fruta de la casa
  */
 public class FruitBehaviour : MonoBehaviour {
-	private GameObject fruitBaseAttached;
+	public GameObject fruitBaseAttached;
 	private bool colision = false;
 	public bool cutted = false;
+	public GameObject colisionador = null;
 
 	void Update () {
 		if (!cutted) {
@@ -24,14 +25,23 @@ public class FruitBehaviour : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision obj) {
+		colisionador = obj.gameObject;
+
 		if(!colision) {
 			colision = true;
-			Invoke ("destroyFruit", 3f);
+			if (colisionador.tag == "Fruit") {
+				Invoke ("destroyFruit", 3f);
+			} else {
+				Invoke ("destroyFruit", 10f);
+			}
 		}
 	}
 
-	private void destroyFruit() {
+	public void destroyFruit() {
 		fruitBaseAttached.GetComponent<BaseScript> ().setNoFruit ();
-		//Destroy (gameObject);
+		Destroy (gameObject);
+		if (colisionador.tag == "Fruit") {
+			Destroy (colisionador);
+		}
 	}
 }

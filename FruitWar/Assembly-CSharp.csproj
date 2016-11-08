@@ -51,7 +51,6 @@
      <Compile Include="Assets\BLINDED_AM_ME package\Scripts\LightningPath.cs" />
      <Compile Include="Assets\BLINDED_AM_ME package\Scripts\LightningStrike.cs" />
      <Compile Include="Assets\BLINDED_AM_ME package\Scripts\Math_Functions.cs" />
-     <Compile Include="Assets\BLINDED_AM_ME package\Scripts\MeshCut.cs" />
      <Compile Include="Assets\BLINDED_AM_ME package\Scripts\Parallax2D.cs" />
      <Compile Include="Assets\BLINDED_AM_ME package\Scripts\ParticlePathFlow.cs" />
      <Compile Include="Assets\BLINDED_AM_ME package\Scripts\PortalView.cs" />
@@ -139,6 +138,7 @@
      <Compile Include="Assets\Scripts\Cut.cs" />
      <Compile Include="Assets\Scripts\FruitBehaviour.cs" />
      <Compile Include="Assets\Scripts\GoalChecker.cs" />
+     <Compile Include="Assets\Scripts\MeshCut.cs" />
      <Compile Include="Assets\Scripts\Player\HandScript.cs" />
      <Compile Include="Assets\Scripts\Player\SwordHit.cs" />
      <Compile Include="Assets\Scripts\Points.cs" />
@@ -176,7 +176,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>C:/Users/ruben/Documents/fruit2/FruitWar/FruitWar/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>C:/Users/ruben/Documents/fruit2 - copia/FruitWar/FruitWar/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
