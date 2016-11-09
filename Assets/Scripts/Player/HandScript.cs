@@ -27,16 +27,35 @@ public class HandScript : MonoBehaviour {
 		weapon.localScale = scaleWeapon;
 	}
 
-	/*void FixedUpdate() {
-	 // Hacer la funcion hit() static
+	void FixedUpdate() {
 		if (CrossPlatformInputManager.GetAxis ("Fire1") == 1) {
-			SwordHit.hit ();
+			playAnimation (0);
 		}
 		if (CrossPlatformInputManager.GetAxis ("Fire2") == 1) {
-			SwordHit.hit ();
+			playAnimation (1);
 		}
 		if (CrossPlatformInputManager.GetAxis ("Fire3") == 1) {
-			SwordHit.hit ();
+			playAnimation (2);
 		}
-	}*/
+	}
+
+	private void playAnimation(int whatAnim) {
+		switch (whatAnim) {
+		case 0:
+			{
+				GetComponent<Animation> ().Play (animation: "Sword_hit");
+			}
+			break;
+		case 1:
+			{
+				GetComponent<Animation> ().Play (animation: "Sword_hit2");
+			}
+			break;
+		case 2:
+			{
+				GetComponent<Animation> ().Play (animation: "Sword_hit3");
+			}
+			break;
+		}
+	}
 }

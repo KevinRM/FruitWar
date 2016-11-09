@@ -24,7 +24,6 @@ GameObject:
   - 54: {fileID: 54000010162748364}
   - 136: {fileID: 136000010560072066}
   - 114: {fileID: 114000011016930572}
-  - 114: {fileID: 114000012141174890}
   - 114: {fileID: 114000012586095396}
   m_Layer: 0
   m_Name: Kiwi
@@ -108,37 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114000012141174890}
-          m_MethodName: hit
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Delegates: []
   delegates: []
---- !u!114 &114000012141174890
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011484084774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f754c1800d721d049a2c13d8ff63ba3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isCutting: 0
 --- !u!114 &114000012586095396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,7 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0062f7558f594c7458439a6e23fe7584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruitBaseAttached: {fileID: 0}
   cutted: 0
+  colisionador: {fileID: 0}
 --- !u!136 &136000010560072066
 CapsuleCollider:
   m_ObjectHideFlags: 1

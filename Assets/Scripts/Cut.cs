@@ -11,7 +11,7 @@ public class Cut : MonoBehaviour {
 		victim = objeto.gameObject;
 
 		// Cortar el elemento con el que se colisionado si es una fruta
-		if (victim.tag.Equals("Fruit") && victim.GetComponent<SwordHit>().isCutting) {
+		if (victim.tag.Equals("Fruit")/* && victim.GetComponent<SwordHit>().isCutting*/) {
 			// Comprobar si la fruta cortada es el objetivo
 			if (!victim.name.Equals("left side")) {
 				GoalChecker.checkFruit (victim.name);
@@ -30,25 +30,12 @@ public class Cut : MonoBehaviour {
 			pieces [1].GetComponent<Rigidbody> ().useGravity = true;
 			pieces [1].AddComponent<SphereCollider> ();
 
-			victim.GetComponent<SwordHit> ().isCutting = false;
-
-			Invoke ("destroyobjects", 3f);
-
-			// Generar una nueva fruta aleatoria para esta FruitBase
-			Invoke("generateNewRandomFruit", 3f);
+			//victim.GetComponent<SwordHit> ().isCutting = false;
+			Invoke ("destroyPart", 5f);
 		}
 	}
 
-	void destroyobjects() {
-		//victim.GetComponent<FruitBehaviour> ().destroyFruit ();
-		Destroy (pieces[0]);
-		Destroy (pieces[1]);
-	}
-
-	void generateNewRandomFruit() {
-		victim.GetComponent<FruitBehaviour>()
-			.fruitBaseAttached
-			.GetComponent<BaseScript>()
-			.setNoFruit();
+	private void destroyPart() {
+		Destroy (pieces [1]);
 	}
 }

@@ -32,7 +32,7 @@ public class FruitBehaviour : MonoBehaviour {
 			if (colisionador.tag == "Fruit") {
 				Invoke ("destroyFruit", 3f);
 			} else {
-				Invoke ("destroyFruit", 10f);
+				Invoke ("destroyFruit", 5f);
 			}
 		}
 	}
@@ -40,8 +40,5 @@ public class FruitBehaviour : MonoBehaviour {
 	public void destroyFruit() {
 		fruitBaseAttached.GetComponent<BaseScript> ().setNoFruit ();
 		Destroy (gameObject);
-		if (colisionador.tag == "Fruit") {
-			Destroy (colisionador);
-		}
 	}
 }
