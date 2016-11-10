@@ -44,16 +44,19 @@ public class HandScript : MonoBehaviour {
 		case 0:
 			{
 				GetComponent<Animation> ().Play (animation: "Sword_hit");
+				GetComponent<AudioSource> ().Play ();
 			}
 			break;
 		case 1:
 			{
 				GetComponent<Animation> ().Play (animation: "Sword_hit2");
+				GetComponent<AudioSource> ().Play ();
 			}
 			break;
 		case 2:
 			{
 				GetComponent<Animation> ().Play (animation: "Sword_hit3");
+				GetComponent<AudioSource> ().Play ();
 			}
 			break;
 		}

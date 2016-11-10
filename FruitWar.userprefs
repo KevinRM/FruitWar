@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\HandScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Cut.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player\HandScript.cs" Line="30" Column="22" />
-      <File FileName="Assets\Scripts\Player\SwordHit.cs" Line="9" Column="5" />
-      <File FileName="Assets\Scripts\Cut.cs" Line="34" Column="28" />
-      <File FileName="Assets\Scripts\FruitBehaviour.cs" Line="11" Column="40" />
+      <File FileName="Assets\Scripts\Player\HandScript.cs" Line="59" Column="42" />
+      <File FileName="Assets\Scripts\Player\SwordHit.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Cut.cs" Line="11" Column="38" />
+      <File FileName="Assets\Scripts\FruitBehaviour.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
