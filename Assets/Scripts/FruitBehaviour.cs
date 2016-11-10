@@ -32,6 +32,7 @@ public class FruitBehaviour : MonoBehaviour {
 			if (colisionador.tag == "Fruit") {
 				Invoke ("destroyFruit", 3f);
 			} else {
+				GetComponent<AudioSource> ().Play ();
 				Invoke ("destroyFruit", 5f);
 			}
 		}
