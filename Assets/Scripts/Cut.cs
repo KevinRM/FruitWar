@@ -7,11 +7,11 @@ public class Cut : MonoBehaviour {
 	private GameObject victim;
 
 	void OnTriggerEnter (Collider objeto) {
-		//gameObject.GetComponentInParent<Rigidbody> ().isKinematic = true;
+		gameObject.GetComponentInParent<Rigidbody> ().isKinematic = true;
 		victim = objeto.gameObject;
 
 		// Cortar el elemento con el que se colisionado si es una fruta
-		if (victim.tag.Equals("Fruit")/* && victim.GetComponent<SwordHit>().isCutting*/) {
+		if (victim.tag.Equals("Fruit") /*&& victim.GetComponent<SwordHit>().isCutting*/) {
 			if (!victim.name.Equals("left side")) {
 				GoalChecker.checkFruit (victim.name);
 			}

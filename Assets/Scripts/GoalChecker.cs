@@ -10,11 +10,6 @@ public class GoalChecker : MonoBehaviour {
 		setRandomFruitGoal ();
 		updateFruitLabel ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	/**
 	 * Establece una nueva fruta objetivo aleatoriamente

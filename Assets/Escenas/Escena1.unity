@@ -13638,6 +13638,10 @@ Prefab:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010289656560, guid: f1a40949376a4934f928271e99c57043, type: 2}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000011569403352, guid: f1a40949376a4934f928271e99c57043, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f1a40949376a4934f928271e99c57043, type: 2}
@@ -14663,6 +14667,10 @@ Prefab:
         type: 2}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013488065284, guid: a11b9ea393f301443ba23745e2cbd4ea, type: 2}
+      propertyPath: m_TagString
+      value: Weapon
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000013190500974, guid: a11b9ea393f301443ba23745e2cbd4ea, type: 2}
